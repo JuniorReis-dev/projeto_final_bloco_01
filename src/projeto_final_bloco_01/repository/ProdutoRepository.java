@@ -1,13 +1,13 @@
 package projeto_final_bloco_01.repository;
 
 import projeto_final_bloco_01.model.Produto;
+import java.util.Optional;
 
 public interface ProdutoRepository {
-    // Métodos do CRUD
-    public void procuraPorId(int id);
-    public void listarTodas();
-    public void cadastrar(Produto produto);
-    public void atualizar(Produto produto);
-    public void deletar(int id);
-    public void listarPorTitular(String nome);
+    Optional<Produto> procuraPorId(int id);
+    void listarTodos();
+    void listarPorNome(String nome);
+    void cadastrar(Produto produto);
+    void atualizar(Produto produto);
+    void deletar(int id);
 }
