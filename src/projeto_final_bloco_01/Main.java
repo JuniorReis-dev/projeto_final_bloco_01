@@ -1,9 +1,8 @@
 package projeto_final_bloco_01;
 
-import java.io.IOException;
 import java.util.Scanner;
 
-import projeto_final_bloco_01.util.Cores;
+import projeto_final_bloco_01.model.Livros;
 
 
 public class Main {
@@ -11,8 +10,9 @@ public class Main {
 	public static void main(String[] args) {
 		
 		Scanner leia = new Scanner(System.in);
-
 		int opcao;
+		Livros r1 = new Livros(1,"teste",2,2,"Romance");
+		r1.visualizar();
 
 		while (true) {
 
